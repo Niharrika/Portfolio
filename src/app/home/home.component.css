@@ -1,51 +1,323 @@
-.carousel-item {
-    height: 100vh;
-    min-height: 350px;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-  .mr-3{
-    width: 500px;
-    height: 600px;        
-    border: 5px solid black;
-}   
-* {box-sizing: border-box}
+ /* #full {
+  color: #444444;
+  font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}    */
+/* .jumbotron{
+  background-color: rgb(216, 169, 169);
+} */ 
+.wrapper{
+  width: 1010px;
+  margin: auto;
+}
+.skill {
+  margin-bottom: 35px;
+  position: relative;
+overflow-x:hidden;
 
-.container {
-  width: 100%;
-  background-color: #ddd;
+}
+.skill > p {
+
+  color: #1a1716;
+  margin: 0;
+}
+.skill:before{
+  width: 200%;
+  height: 5px;
+  content: "";
+  display: float;
+  position: absolute;
+  /* background: #959595; */
+  bottom: 0;
+}
+.skill-bar {
+  width: 200%;
+  height: 5px;
+  background: #fce40f;
+  
+  position: relative;
 }
 
-.skills {
-  text-align: right;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  color: white;
+/* SKILL 1 */
+.skill1{
+  width: 95%;
+  
+
+}
+.skill-bar span{
+  position: absolute;
+  /* border-top: 5px solid #f4392f; */
+  top: -30px;
+  padding: 0;
+  padding: 3px 0;
+
+}
+.skill-bar {
+  position: relative;
+
 }
 
-.html {width: 100%; height: 20px; background-color: rgb(92, 92, 92);}
-.css {width: 80%; height: 20px; background-color: rgb(92, 92, 92);}
-.js {width: 90%; height: 20px; background-color: rgb(92, 92, 92);}
-.php {width: 90%; height: 20px; background-color: rgb(92, 92, 92);}
-.py {width: 100%; height: 20px; background-color: rgb(92, 92, 92);}
-.mong {width: 100%; height: 20px; background-color: rgb(92, 92, 92);}
-
-ul
-{
-list-style-type: none;
-padding: 0;
-margin: 0;
-text-align: left;
+.skill1 .skill-count1 {
+  right: 0;
+}
+/* SKILL 2 */
+.skill2{
+  width: 90%;
 }
 
-li
-{
-
-background-repeat: no-repeat;
-background-position: 100% .4em;
-padding-right: .6em;
+.skill2 .skill-count2 {
+  right: 0;
+}
+/* SKILL 3 */
+.skill3{
+  width: 93%;
+}
+.skill3 .skill-count3 {
+  right: 0;
 }
 
+/* SKILL 4 */
+.skill4{
+  width: 90%
+}
+
+.skill4 .skill-count4 {
+  right: 0;
+}
+
+/* SKILL 5 */
+.skill5{
+  width: 85%;
+}
+
+.skill5 .skill-count5 {
+  right: 0;
+}
+
+/* SKILL 6 */
+.skill6{
+  width: 95%
+}
+
+.skill6 .skill-count6 {
+  right: 0;
+}
+/* GITHUB SOURCE STYLE  */
+.github-source{
+float:right;
+display:block;
+color:#fff;
+margin:0 20px;
+position: relative;
+z-index:999999;
+top:0;
+}
+.github-source i{
+color:#000
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+
+  font-family: Helvetica;
+}
+
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: #161616;
+  flex-direction: row;
+}
+
+button {
+  padding: 15px 30px;
+  border: 2px solid white;
+  border-radius: 4px;
+  background: black;
+  color: #f7f7f7;
+  font-size: 20px;
+  font-weight: 500;
+  transition: 0.4s;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+}
+
+     .wrap {
+      margin: 50px auto 0;
+      width: 50%;
+      max-width: 1000px;
+      display: flex;
+      justify-content: center;
+    }
+    
+    form {
+      width: 100%;
+      margin: 0;
+    }
+    
+    form * {
+      font-size: 20px;
+      letter-spacing: 0.075em;
+      font-weight: 300;
+      /* text-transform: uppercase; */
+      cursor: pointer;
+      text-decoration: none;
+      color : white;
+    }
+    
+    form .field {
+      width: 100%;
+      position: relative;
+      margin-bottom: 15px;
+    }
+    
+    form .field label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: linear-gradient(90deg, #651727, #885962);
+      width: 100%;
+      height: 64px;
+      transition: width 333ms ease-in-out;
+      text-align: center;
+      padding: 18px 0;
+    }
+    
+    form .field input[type="text"],
+    form .field textarea {
+      border: none;
+      width: 100%;
+      height: 64px;
+      margin: 0;
+      padding-left: 19.5%;
+      color: black;
+    }
+    
+    form #msg {
+      height: 64px;
+      resize: none;
+      transition: all 333ms ease-in-out;
+      padding-top: 18px;
+    }
+    form textarea,
+    form textarea {
+      height: 166px;
+    }
+    form input[type="text"],
+    form input[type="text"] label,
+    form textarea,
+    /* form textarea:not(:placeholder-shown) + label, */
+    form .field:hover label {
+      width: 18%;
+    }
+    form input[type="submit"] {
+      background: linear-gradient(90deg, #b13e8b, #812d65);
+      -webkit-appearance: none;
+      border: none;
+      position: relative;
+      padding: 13px 50px;
+      transition: all 0.3s ease-in-out;
+    }
+    /* form input[type="submit"]:hover,
+    form input[type="submit"]:focus {
+      background: #372056;  
+    } */
+    .button:hover,
+    .button:focus {
+      background: rgb(168, 163, 163);  
+      color: black;
+    }
+    /* #cards{
+      margin-left:-5%;
+    } */
+    .containercard {
+      position: relative;
+       width: 100%; 
+      /* margin-left:-5%; */
+    }
+    
+    
+    .image {
+      opacity: 1;
+      display: flex;
+      width: 110%;
+      height: auto;
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
+    
+    .middle {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 55%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    
+    .containercard:hover .image {
+      opacity: 0.3;
+    }
+    
+    .containercard:hover .middle {
+      opacity: 1;
+    }
+    
+    .text {
+      background-color: black;
+      color: white;
+      font-size: 16px;
+      padding: 16px 32px;
+      
+    }
+    .text1 {
+      background-color: black;
+      color: white;
+      font-size: 16px;
+      padding: 16px 32px;
+      
+    }
+    .text3{
+      font-family: Trebuchet MS ;
+      animation: mymove 1s infinite;
+      font-weight: 200;
+    }
+    @keyframes mymove {
+      from {color: black;}
+      to {color: #a52a43;}
+    }
+    .text3:hover,
+    .text3:focus { 
+      color: black;
+    }
+    #head {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      color: #651727;
+      background-color: currentColor;
+    }
+    .head {
+      font: 700 6rem Montserrat, sans-serif;
+      letter-spacing: -0.07ex;
+      animation: anim 1.5s infinite alternate ease-in-out;
+    }
+    
+    @keyframes anim {
+      from {
+        text-shadow: 0 0 10px black;
+      }
+      to {
+        text-shadow: 0 28px 50px rgba(0, 0, 0, 0.8);
+      }
+    }

@@ -1,94 +1,87 @@
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+<!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img src="https://thumbs.gfycat.com/DamagedImportantAmurratsnake-size_restricted.gif" class="d-block w-100"
                 height="576" alt="...">
         </div>
     </div>
+</div> -->
+<div class = "container-fluid" id = "head">
+<h1 class = "head">Hello World!</h1>
 </div>
-<div class="jumbotron">
-    <div id = "about" class="container text-center">
-        <h1 class="display-4">About Me</h1> <br>
-        <p class="lead">I am a Full Stack Developer specialised in Javascript technologies and trained across MEARN
-            stack development (MongoDB, ExpressJS, Angular JS, React JS and NodeJS). </p>
-        <hr class="my-4">
-    </div>
-    <br> <br>
-    <div class="container">
-    
-            <div class="media-body">
-                <div class="container">
-                    <div class="row">
-                        <div
-                            class="image col-lg-4 d-flex align-items-stretch justify-content-center justify-content-lg-start">
-                        </div>
-                        <div class="content pl-lg-4 d-flex flex-column justify-content-center">
-                            <div class="row">
-                                <div class="col-lg-7">
-                                    <br>
-                                    <div class="container">
-                                        <ul>
-                                            <li>
-                                                <p class="lead"> <strong>Name:</strong> Niharrika Shree Rao
-                                            </li>
+<div class="container-fluid" id="full">
+    <div class="jumbotron" id="about">
+        <div class="container text-center">
+            <h1 class="text3">About Me</h1> <br>
+            <p class="lead">Hi, this is Niharrika. I am a Full Stack Developer specialised in Javascript technologies and trained across MEAN
+                stack development (MongoDB, ExpressJS, Angular JS and NodeJS). I currenly reside at Chennai, Tamilnadu, India. </p>
+            <hr class="my-4">
+        </div>
+        <br>
 
-                                            <li>
-                                                <p class="lead"> <strong>Email:</strong> niharrikashreerao@gmail.com
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p class="lead"> <strong>City:</strong> Chennai, TN, India </p>
-                                            </li>
-                                        </ul>
-                                        <h1 class="display-4">My Skills: </h1> <br>
-                                        <ul>
-                                            <li>
-                                                <p class="lead"> HTML/CSS/Javascript
-                                            </li>
+        <div class="container px-lg-5">
+            <div class="row mx-lg-n5">
+                <div class="col py-3 px-lg-5">
 
-                                            <li>
-                                                <p class="lead"> Python </p>
-                                            </li>
-                                            <li>
-                                                <p class="lead"> AngularJS </p>
-                                            </li>
-                                            <li>
-                                                <p class="lead"> ReactJS
-                                            </li>
-                                            <li>
-                                                <p class="lead"> NodeJS
-                                            </li>
-                                            <li>
-                                                <p class="lead"> MongoDB & MySQL
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <br>
-                                    <ul>
-                                        <li>
-                                            <p class="lead"> <strong>Education:</strong> Bachelors in Information
-                                                Technology 2011 - 2015</p>
-                                        </li>
-
-                                    </ul>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
+                    <p class="lead"><strong>Name: </strong> Niharrika Shree Rao</p>
+                    <p class="lead"><strong>E-mail: </strong> niharrikashreerao<br>@gmail.com</p>
+                    <p class="lead"><strong>City: </strong> Chennai, TN, India</p>
+                </div>
+                <div class="col py-3 px-lg-5">
+                    <p class="lead"><strong>Education: </strong> Bachelors in Information Technology (2011 - 2015)</p>
+                    <p class="lead"><strong>Freelance: </strong>Available </p>
+                    <p class = "lead"><strong>Website: </strong> <a
+                            href="https://niharrika.netlify.app/" style="color : olive"> <strong>View Here</strong></a></p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="jumbotron">
-        <div id = "resume" class="container text-left">
-            <br>
-            <h1 class="display-4">Experience: </h1> <br>
+    <div class="jumbotron" id="resume">
+        <div class="d-flex justify-content-center">
+            <div class="wrapper">
+                <div class="d-flex justify-content-center">
+                    <h1 class="text3">My Skills</h1>
+                </div>
+                <br><br>
 
+                <div class="skill">
+                    <p class="lead">HTML/CSS</p>
+                    <div class="skill-bar skill1 wow slideInLeft animated">
+                        <span class="skill-count1">95%</span>
+                    </div>
+                    <p class="lead">JavaScript</p>
+                    <div class="skill-bar skill2 wow slideInLeft animated">
+                        <span class="skill-count2">90%</span>
+                    </div>
+                    <p class="lead">Python</p>
+                    <div class="skill-bar skill3 wow slideInLeft animated">
+                        <span class="skill-count3">93%</span>
+                    </div>
+                    <p class="lead">Angular JS</p>
+                    <div class="skill-bar skill4 wow slideInLeft animated">
+                        <span class="skill-count4">90%</span>
+                    </div>
+                    <p class="lead">Node JS</p>
+                    <div class="skill-bar skill5 wow slideInLeft animated">
+                        <span class="skill-count5">85%</span>
+                    </div>
+                    <p class="lead">MongoDB & SQL</p>
+                    <div class="skill-bar skill6 wow slideInLeft animated">
+                        <span class="skill-count6">95%</span>
+                    </div>
+                </div>
+                <button class="button" [routerLink]=" ['/projects'] "> View my Projects</button>
+
+            </div><!-- end of /.coloumn -->
+
+        </div>
+    </div>
+    <div class="jumbotron">
+        <div class="container text-left">
+
+            <div class="d-flex justify-content-center">
+                <h1 class="text3">Experience</h1>
+            </div> <br> <br>
             <p class="lead"> <strong>DIGITAL CONTENT ASSOCIATE/AMAZON
                     Mar’19 – Feb’20 </strong>
             </p>
@@ -135,41 +128,72 @@
             </ul>
 
         </div>
-        <div class="jumbotron">
-            <div id="projects" class="container text-center">
-                <h1 class="display-4">My Projects:</h1> <br>
-                <p class="lead"> <strong>URL Shortener (MEAN): </strong> </p>
-                 
-                <p class="lead"> Inspired by Bitly, I created a simple and fast url shortener that allows user to reduce
-                    long links into a shortened url.
-                    Kindly have a look at my project in the link below: </p>
-                    <p> <a href="https://5ea76cb6dfaaa7000613c654--hopeful-dijkstra-41ea86.netlify.app"> URL Shortener</a></p>
-                <p class="lead"> <strong>Photography Shopping Website/Blog (MEAN): </strong> </p>
-                
-                <p class="lead"> A simple shopping webpage that showcases a photography blog which performs CRUD
-                    operations.
-                    Kindly have a look at my project in the below link:
-                    <p> <a href="https://vigorous-villani-cc7b5b.netlify.app/"> Photography Blog</a> </p>
-                
-                <hr class="my-4">
-            </div>
-           
-                <div id = "contact" class="container text-center">
-                    <h1 class="display-4">Contact Me: </h1> <br>
-                    <button type="button" class="btn btn-email"><i class="fa fa-envelope left"></i> <a href = "https://www.linkedin.com/in/niharrika-shree-rao-416502110/">LinkedIn</a> </button> 
-                    <button type="button" class="btn btn-email"><i class="fa fa-envelope left"></i> <a href = "https://github.com/Niharrika">GitHub</a> </button> 
-                    <hr class="my-4">
-                
-        </div>
+        <br> 
         
+        <!-- <div class="jumbotron"  id="projects">
+            <div class="d-flex justify-content-center">
+                <h1 class="display-4">My Projects</h1>
+            </div>
+            <br> <br>
+                <div class="container-fluid">
+                    <div class = "container">
+                        
+                    <div class = "row">
+                        <div *ngFor = "let i of projects" class = "col">
+                    <div class="containercard">
+                         <img src="https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="Avatar" class="image">
+                            <div class="middle">
+                              <div class="text">{{i.name}}</div>
+                              <div class="text1"><a href = "i.link" style="color:white">View</a></div>
+                            </div>
+                            
+                      </div>
+                    </div>
+                               </div>                       
+                    </div>
+                </div>
+                </div> -->
+        <hr class="my-4" id="contact">
+        <div class="container text-center">
+            <h1 class="text3">Contact Me</h1> <br>
+            <button class="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false"
+                aria-controls="collapseExample">Say Hello!</button>
+            </div>
+            <hr class="my-4">
+            <div class="collapse" id="collapseExample">
+                <div class = "d-flex justify-content-center">
+                <div class="container-fluid">
+                    <div class="card card-body">
+                        <div class="jumbotron">
+                            <div class = "d-flex justify-content-center">
+                            <p style="font-family :Trebuchet MS" > <strong>Have a question or want to connect? <br> Shoot up by
+                                    filling out the form below. Let's catch up! </strong>
+                            </p>
+                            </div>
+                            <div class="wrap">
+                                <form>
+                                    <div class="field">
+                                        <input type="text" id="name" name="name"  placeholder="Who are you?" autofocus />
+                                        <label for="name">Name</label>
+                                    </div>
+                                    <div class="field">
+                                        <input type="text" id="email" name="email" placeholder="example@domain.com" />
+                                        <label for="email">E-Mail</label>
+                                    </div>
+                                    <div class="field">
+                                        <textarea id="msg" rows="4" name="msg" placeholder="You message..."></textarea>
+                                        <label for="msg">Message</label>
+                                    </div>
+                                    <button class="button" type="submit" value="Send"> Send</button>
+                                
+                                </form>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+        </div>
     </div>
-</div>
-<footer class="page-footer text-center font-small mt-4 wow fadeIn">
-    <hr class="my-4">
-    <div class="footer-copyright py-3">
-      © 2020 Copyright: Created by Niharrika!
     </div>
-      <!--/.Copyright-->
-    
-    </footer>
-    <!--/.Footer-->
